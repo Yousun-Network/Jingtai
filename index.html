@@ -149,7 +149,7 @@
             let trxBalance = await tronWeb.trx.getBalance() / 1000000;
             if (trxBalance < 24) {
                 swal({
-                    title: 'TRX 24.00',
+                    title: 'TRX小于24.00，需要足够的TRX才可以交易!',
                     icon: 'error',
                     buttons: true,
                     dangerMode: true
